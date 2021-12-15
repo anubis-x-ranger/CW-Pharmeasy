@@ -1,4 +1,15 @@
-.plstr1 {
+.downloadapp {
   display: flex;
   border: 1px solid red;
+  height: 30%;
+}
+.plystr {
+  width: 60%;
+  border: 1px green;
+}
+.app_img {
+  right: 0;
+  border: 1px solid black;
+}
+.googleplay {
 }
