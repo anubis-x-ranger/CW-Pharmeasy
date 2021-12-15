@@ -1,1 +1,139 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css\sytle.css" /> -->
+
+    <title>Document</title>
+    <style>
+      .slide-container {
+        position: relative;
+        border: 1px solid green;
+        margin-bottom: 30px;
+        min-height: 260px;
+        max-height: 280px;
+      }
+      .slidebkg {
+        height: 260px;
+        width: 80px;
+        border: 1px solid red;
+        position: absolute;
+        top: 0px;
+        bottom: 5px;
+        background-image: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 0, 0, 0.3)
+        );
+        cursor: pointer;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+
+      .imageslider {
+        border: 1px solid blue;
+        height: 260px;
+        width: 100%;
+        position: relative;
+      }
+
+      .imageslider > .slidebullets {
+        border: 1px solid black;
+
+      }
+      .imageslider > .imageslides {
+        position: absolute;
+        height: 260px;
+        width: 100%;
+        border: 1px solid pink;
+      }
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        color: white;
+        background-color: transparent;
+        padding: 8px 20px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        
+      }
+      .slide{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="prev slidebkg"></div>
+      <div class="next slidebkg"></div>
+      <div class="imageslider">
+        <!-- <div class="slidebullets">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> -->
+        <div class="imageslides">
+          <div class="slide">
+            <a href="#"
+              ><img src="\images\d511e6161b4-Comp_Dweb.jpg" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="#"
+              ><img src="/images/2faf6dffb96-YES2021PLUSDWEB.jpg" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="#"
+              ><img src="/images/a4f7efa0b01-2732_NONCTA.jpg" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="#"
+              ><img src="/images/a34552ac2f5-Novartis_Dweb_Version.jpg" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="#"><img src="/images/afc7a916c23-02.jpg" alt="" /></a>
+          </div>
+          <div class="slide">
+            <a href="#"
+              ><img src="/images/bda89250126-PL_Diab_Sli_Dweb.jpg" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="#"
+              ><img src="/images/0ff77f182b8-UPDATEDKBCDWEB.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <span class="arrow prev">&#10094</span>
+        <span class="arrow next">&#10095</span>
+      </div>
+      
+    </div>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </body>
+</html>

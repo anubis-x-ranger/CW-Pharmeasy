@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+.slide-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  min-height: 260px;
+  max-height: 280px;
+}
+.slide {
+  width: 100%;
+}
+img {
+  object-fit: cover;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: white;
+  background-color: transparent;
+  padding: 8px 20px;
+}
+
+/* .prevslidebtn {
+  border: 1px solid red;
+}
+.nextslidebtn {
+  border: 1px solid orange;
+}
+.imageslider {
+  border: 1px solid blue;
+}
+.imageslider > .slidebullets {
+  border: 1px solid black;
+}
+.imageslider > .imageslides {
+  border: 1px solid pink;
+} */
