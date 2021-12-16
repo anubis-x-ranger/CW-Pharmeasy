@@ -109,6 +109,8 @@ html,
   line-height: 1.4;
   padding: 0;
   margin-top: 2px;
+  background-color: #f2f5f5;
+  border-radius: 5px;
 }
 .faqsection {
   padding-top: 0;
