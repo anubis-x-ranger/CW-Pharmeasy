@@ -1,6 +1,12 @@
 * {
   font-family: "Open Sans", sans-serif !important;
 }
+.labtestimg {
+  width: 100%;
+}
+.labtestimg > img {
+  width: 100%;
+}
 .FAQ {
   width: 100%;
   height: 1100px;
