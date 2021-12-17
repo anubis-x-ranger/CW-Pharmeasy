@@ -1,3 +1,21 @@
 /*  <!-- Recommended for you slider  --> */
+.recommend-slider-container {
+  width: 100%;
+  height: 30%;
+  border: 1px solid red;
+  display: flex;
+}
 /* <!-- order opage slider --> */
+.orderpage-slide-container {
+  width: 80%;
+  border: 1px solid red;
+  display: flex;
+  margin: auto;
+}
 /* <!-- healthcare page slider  --> */
+.healthpage-slider-container {
+  width: 80%;
+  border: 1px solid red;
+  display: flex;
+  margin: auto;
+}
