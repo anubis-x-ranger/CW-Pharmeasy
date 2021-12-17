@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 250px;
+            font-family: "Open-sans",sans-serif !important;
+            
+        }
+        #ahead{
+            display: grid;
+            grid-template-columns: repeat(4,176px);
+            grid-template-rows: 60px;
+            grid-gap: 20px;
+        }
+        #ahead>div{
+            border: 1px solid gray;
+            border-radius: 30px;
+        }
+        #ahead>div:hover{
+            border: 1px solid teal;
+        }
+        .asmallimg{
+            height: 23px;
+            width: 23px;
+            border-radius: 50%;
+            margin: 15px;
+            margin-left: 25px; 
+        }
+        .aheadIn{
+            display: flex;
+            
+            
+        }
+        .aP{
+            font-size: 14px;
+            font-weight: 550;
+            color: #4F585E;
+            padding-left: 0px;
+            
+            /* background-color: #FFFFFF; */
+        }
+        #aP{
+            margin-top: 20px;
+        }
+        #aP:hover{
+            color: teal;
+        }
+        .aP:hover{
+            color: teal;
+        }
+        a{
+            text-decoration: none;
+        }
+        #aDoctorV{
+            height: 100px;
+            width: 760px;
+            margin-top: 23px;
+        }
+        #asave{
+            margin-top: 20px;
+            cursor: pointer;
+            height: 50px;
+            width: 760px;
+        }
+
+        @media(max-width: 735px){
+            body{
+            margin-left: 10px;  
+            }
+            #ahead{
+            display: grid;
+            grid-template-columns: repeat(2,280px);
+            grid-template-rows: 60px 60px;
+            grid-gap: 12px 25px;
+           }
+           #ahead>div{
+            border: 1px solid gray;
+            border-radius: 5px;
+           }
+           #aDoctorV{
+            height: 70px;
+            width: 590px;
+            margin-top: 13px;
+           }
+           #asave{
+            height: 40px;
+            width: 588px;
+            margin-top: 17px;
+          }
+
+        }
+        @media(max-width: 358px){
+            body{
+            margin-left: 5px;  
+            }
+            #ahead{
+            display: grid;
+            grid-template-columns: repeat(2,160px);
+            grid-template-rows: 60px 60px;
+            grid-gap: 12px 25px;
+           }
+           #ahead>div{
+            border: 1px solid gray;
+            border-radius: 3px;
+           }
+           #aDoctorV{
+            height: 55px;
+            width: 100%;
+            margin-top: 13px;
+           }
+           #asave{
+            height: 40px;
+            width: 100%;
+            margin-top: 17px;
+          }
+          .asmallimg{
+            margin-left: 10px; 
+          }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="ahead">
+        <div class="aheadIn">
+            <img class="asmallimg"  src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg">
+            <a href="" > <p class="aP" id="aP">All Tests</p></a>
+            
+            
+        </div>
+        <div  class="aheadIn">
+            <img class="asmallimg" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg">
+            <a href=""><p class="aP">Health Packages</p></a>
+        </div>
+        <div  class="aheadIn">
+            <img class="asmallimg" src="https://assets.pharmeasy.in/web-assets/dist/d4d62fbf.svg">
+            <a href=""><p class="aP">Upload Prescription</p></a>
+        </div>
+        <div  class="aheadIn">
+            <img class="asmallimg" src="https://assets.pharmeasy.in/web-assets/dist/4ed59722.svg">
+            <a href=""><p class="aP" id="aP">Book on Call</p></a>
+        </div>
+    </div>
+    <div id="aDoctorV">
+       <img src="CaptureDoctor.PNG" height="100%" width="100%" /> 
+    </div>
+    <div id="asave">
+        <img src="Save.PNG" height="100%" width="100%"/>
+    </div>
+</body>
+</html>
