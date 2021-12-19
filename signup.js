@@ -54,6 +54,8 @@ var databaseObj = {
 arr.push(databaseObj);
 console.log(arr);
 localStorage.setItem("Details",JSON.stringify(arr));
+  alert("Registration Successful");
+  window.location.href = "signup.html"
 }
 
 document.querySelector("#login-form").addEventListener("submit",login);
@@ -74,6 +76,7 @@ function login(event){
  };
  if(flag==1){
      alert("Login Successful");
+   window.location.href = "index.html";
  }
  else if(flag==0){
      alert("Wrong Credentials");
