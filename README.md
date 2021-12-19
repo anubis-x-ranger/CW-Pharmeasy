@@ -1,3 +1,4 @@
 # CW-Pharmeasy
-Rules:
-1. Please commit to your own branches that I have created dont commit to the main we will update the main later
+We tried our level best to try to clone the entire PharmEasy wesite.
+technologies Uswd : HTML, CSS, JS
+Refered Websites : W3schools, Mdn, Flaticon, googlefonts etc....
