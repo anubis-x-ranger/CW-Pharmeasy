@@ -1,0 +1,482 @@
+#headcontainer {
+    display: grid; 
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "f prod  "
+    ". prod  ";
+    margin-left: 50px;
+}
+#filter {
+  width: 220px;
+  margin-left: 100px;
+  margin-top: 20px;
+  height:500px;
+  grid-area :f
+}
+#container {
+    margin: auto;
+    /* width: 55%; */
+    margin-left: 70px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap : 15px;
+    grid-area: prod;
+    height: 2700px;
+}
+#container > div {
+
+    border: 1px solid #dfe3e6;
+    padding-left: 20px;
+    font-family: Lato,sans-serif;
+    font-size: 16px;
+    color: #4f5856;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 18px;
+    height: 400px;
+}
+#container > :nth-child(1n):hover{
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+#sop {
+    text-decoration:line-through;
+}
+#sophead {
+    color: #a5adb4;
+    font-weight: 350;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+#btn {
+    margin-left: 70%;
+    margin-bottom: 20px;
+    border: 0px;
+    width: 35%;
+    height: 10%;
+    background-color: teal;
+    color: #dfe3e6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#sortbox{
+    margin: auto;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    font-family: Lato,sans-serif;
+    color: #4f5856;
+    grid-area: sb;
+}
+#sortbox > h3 {
+    margin-left: -10%;
+    margin-top: 55px;
+   
+}
+#sortbox > div > p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8897a2;
+}
+#sortbox > div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:auto;
+    
+}
+#sortboxhead{
+    height: 46px;
+    width: 200%;
+    margin-left: -30%;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid #8897a2;
+    color: #353535;
+    font-weight: 400;
+}
+
+option :hover{
+  cursor: pointer;
+}
+/* Header---------------------------------- */
+#containHeader{
+    display:flex;
+    width:100%;
+    height:120px;
+    background-color:#10847e;
+  }
+  #containHeader > #logo :hover{
+    cursor: pointer;
+  }
+  #logo{
+    height:120px;
+    width:270px;
+    margin-left:20px;
+  }
+  #tabHead{
+    height:100%;
+    width:100%;
+  }
+  #searchHead{
+    /* height:45%; */
+    /* width:1200px; */
+    margin:auto;
+    margin-left: -10px;
+    color: white;
+  }
+
+
+  .header-ul{
+    display:flex;
+  }
+  .header-ul > p {
+    font-size: 18px;
+       color: white;
+       font-weight: 500;
+       font-family: Lato, sans-serif;
+       margin-right: 20px;
+       padding-bottom: -90px;
+       margin-top: -3px;
+  }
+  /* li a{
+    text-decoration:none;
+    color:white;
+  } */
+  /* li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:white;
+    margin:auto;
+    display:block;
+  } */
+  
+  /* li a:hover::after{
+    width:100%;
+    transition: width 0.1s linear;
+  } */
+  .header-ul>  :nth-child(1n):hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+  }
+  .keyHead{
+    color:white;
+    font-size:16px;
+    font-family:Open Sans,sans-serif;
+    margin-top:-4px;
+    margin-left:25px;
+    border:transparent;
+    background-color:transparent;
+  }
+  ion-icon {
+    color: white;
+    font-size: 20px;
+    margin:auto;
+    margin-left: -70px;
+    margin-bottom: 8px;
+  }
+  #searchBox{
+    display:flex;
+    flex-shrink:initial; 
+    width: 50%;
+  }
+  #srchTxt{
+    background-color:white;
+    width: 10%;
+    height: 100%;
+  }
+  #searboxhead {
+width: 830px;
+height: 47px;
+/* border: 1px solid white; */
+border-radius: 8px;
+background-color: white;
+display: flex;
+flex-shrink: initial;
+margin-top: 20px;
+}
+
+#searboxhead > img {
+  width: 7%;
+    height: 99%;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+#sbtexthead{
+  width: 80%;
+  border-radius: 5px;
+  border: 0px;
+  height: 87%;
+  color: #1e1e1f;
+  margin-top: 2.5px;
+  margin-right: -20px;
+}
+#sbhead {
+  width: 21%;
+  border-radius: 8px;
+  height: 100%;
+  border: none;
+  color: teal;
+}
+
+#logo > img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.keyHead__text > li{
+  margin-top: -30px;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+button > :nth-child(1n) :hover {
+ cursor: pointer;
+ border-bottom: 2px solid white;
+}
+#loginPage {
+ margin-left: 60px;
+}
+#CartNum {
+  margin-top: -36px;
+  margin-right: 50px;
+  background-color: rgb(236, 105, 175);
+  color: black;
+  border: 0;
+  border-radius: 50px;
+  font-size: 15px;
+}
+/* ------------------------Up to here Header-------------------------- */
+.rad {
+    display: flex;
+    /* justify-content: space-around; */
+}
+#filter1-1{
+    width: 100%;
+    padding-left: 20px;
+    font-family: Lato,sans-serif;
+    color: #2c2c2c;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 330;
+}
+#filter1-1 > h2 {
+    font-size: 18px;
+}
+#filter1-2 {
+    width: 100%;
+    padding-left: 20px;
+    font-family: Lato,sans-serif;
+    color: #2c2c2c;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 330;
+}
+#filter1-2 > h2 {
+    font-size: 18px;
+    
+}
+#filtername >h3 {
+   margin-left: -70%;
+}
+
+/* -------------------- SORT DROP DOWN--------------------------- */
+
+.dropbtn {
+  background-color: white;
+  color: #2c2c2c;
+  padding: 13px;
+  font-size: 16px;
+  width: 175%;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right:30px;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(170, 224, 219);
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 267px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: rgb(170, 224, 219);
+}
+
+.show {display:block;}
+
+
+/* ----------------------------FOOTer---------------------------------------- */
+
+.footer-body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fb;
+}
+      
+.container{
+  max-width: 1170px;
+  line-height: 1.5;
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box
+}
+.row{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  flex-wrap: wrap;
+  
+}
+.footer-ul{
+  list-style: none;
+}
+.footer{
+  font-family: 'Poppins', sans-serif;
+  padding: 70px 0;
+  line-height: 12px;
+  padding-left: 120px;
+  box-sizing: border-box;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  line-height: 1.5;
+  
+}
+.footer-col{
+ width: 100%;
+ 
+
+}
+.footer-col h4, #payment-section h4{
+ font-size: 15px;
+ color: #504d4d;
+ text-transform: capitalize;
+ margin-bottom: 0px;
+ margin-top: 30px;
+ font-weight: 700;
+ position: relative;
+ 
+ 
+}
+.footer-col h4{
+  margin-left: 13%;
+}
+#afollow{
+  margin-left: 0%;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom:13px;
+}
+.footer-col ul li a, p{
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(92, 93, 94);
+}
+.footer-col ul li a:hover{
+  color: rgb(102, 103, 104);
+  padding-left: 3px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  background-color: rgb(18, 124, 124);
+  text-align: center;
+  color: aliceblue;
+  line-height: 30px;
+  margin: 0 10px 10px 0px;
+  border-radius: 50%;
+}
+.footer-col .social-links a:hover{
+  color: rgb(18, 124, 124);
+  background-color: #f4f7fb;
+}
+
+/* responsive */
+@media(max-width: 800px){
+  .footer-col {
+  width: 50%;
+  margin-bottom: 30px;
+ }
+ /* .footer {
+  padding-left: 60px;
+ } */
+ .last{
+     width: 50%;
+ }
+ #smallimage img{
+     height: 50%;
+     width: 25px;
+ }
+ .row{
+  
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  
+  
+ }
+ .footer-col h4{
+  margin-left: 4%;
+}
+}
+@media(max-width: 580px){
+  .footer-col {
+  width: 100%;
+ }
+ .footer {
+  padding-left: 40px;
+ }
+}
+#smallimage{
+  display: flex;
+  
+}
+#smallimage img{
+  height: 29px;
+  width: 40px;
+  margin-right: 10px;
+}
+.last{
+  display: flex;
+}
+#footer-p{
+  margin-top: 70px;
+  margin-left: 240px;
+}
