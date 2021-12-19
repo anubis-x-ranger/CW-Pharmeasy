@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+      #containHeader{
+        display:flex;
+        width:100%;
+        height:120px;
+        background-color:#10847e;
+      }
+      img{
+        margin-top:30px;
+        height:65px;
+        width:200px;
+      }
+      #logo{
+        height:120px;
+        width:270px;
+        margin-left:20px;
+      }
+      #tabHead{
+        height:100%;
+        width:100%;
+      }
+      #searchHead{
+        /* height:45%; */
+        /* width:1200px; */
+        margin:auto;
+        
+      }
+
+      ul{
+        display:flex;
+      }
+      li {
+        font-size:18px;
+        font-family:Open Sans,sans-serif;
+        margin-top:4px;
+        margin-left:25px;
+        list-style:none;
+        font-weight: 300;
+      }
+      li a{
+        text-decoration:none;
+        color:white;
+      }
+      li a::after{
+        content:'';
+        width:0;
+        height:3px;
+        background-color:white;
+        margin:auto;
+        display:block;
+      }
+      
+      li a:hover::after{
+        width:100%;
+        transition: width 0.1s linear;
+      }
+      
+      .keyHead{
+        color:white;
+        font-size:16px;
+        font-family:Open Sans,sans-serif;
+        margin-top:-4px;
+        margin-left:25px;
+        border:transparent;
+        background-color:transparent;
+      }
+      ion-icon {
+        color: white;
+        font-size: 20px;
+        margin:auto;
+       
+        margin-bottom: -4px;
+      }
+      #searchBox{
+        display:flex;
+        flex-shrink:initial; 
+        width: 50%;
+      }
+      #srchTxt{
+        background-color:white;
+        width: 10%;
+        height: 100%;
+      }
+      #searboxhead {
+    width: 830px;
+    height: 47px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-shrink: initial;
+    margin-top: 20px;
+    }
+    #searboxhead > img {
+      width: 7%;
+        height: 99%;
+        border-radius: 8px;
+        margin-top: 0px;
+    }
+    #sbtexthead{
+      width: 80%;
+      border-radius: 5px;
+      border: 0px;
+      height: 87%;
+      color: #c1c9ce;
+    }
+    #sbhead {
+      width: 21%;
+      border-radius: 8px;
+      height: 100%;
+      border: none;
+      color: teal;
+    }
+      
+    </style>
+</head>
+<body>
+  <div id="containHeader">
+    <div id="logo">
+      <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+    </div>
+    <div id="tabHead">
+      <div id="searchHead">
+        <div id="searboxhead">
+          <select id="sbhead">
+              <option value="None">Select Pincode</option>
+              <option value="A F station yelahanka">560063</option>
+              <option value="Air Force hospital">560007</option>
+              <option value="Amruthahalli">560092</option>
+              <option value="Anandnagar">560024</option>
+              <option value="Ashoknagar">560050</option>
+              <option value="Austin Town">560047</option>
+              <option value="Avenue Road">560002</option>
+              <option value="Bannerghatta">560083</option>
+              <option value="Bellandur">560103</option>
+          </select>
+          <input type="text" id="sbtexthead" placeholder="Search for Medicines / Healthcare Products@18% Off">
+          <img src="https://t3.ftcdn.net/jpg/01/05/18/78/240_F_105187826_f9QmMttoqksCW1abMmDCAv8q2u265Saa.jpg" alt="" width="10px" height="10px">
+       </div>
+      </div>
+      <div id="searchHead">
+        <nav>
+          <ul>
+            <li><a href="#">Order Medicines</a></li>
+            <li><a href="#">Healthcare Products</a></li>
+            <li><a href="#">Lab Tests</a></li>
+            <button type="button" class="keyHead" style="margin-left:300px">
+              <span class="keyHead__icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </span>
+              <span class="keyHead__text">Offers</span>
+            </button>
+            <button type="button" class="keyHead">
+              <span class="keyHead__icon">
+                <ion-icon name="person"></ion-icon>
+              </span>
+              <span class="keyHead__text">Login / Signup</span>
+            </button>
+            <button type="button" class="keyHead">
+              <span class="keyHead__icon">
+                <ion-icon name="cart"></ion-icon>
+              </span>
+              <span class="keyHead__text">Cart</span>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

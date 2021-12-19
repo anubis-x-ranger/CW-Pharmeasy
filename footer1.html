@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+       
+        /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    margin: 0;
+    padding: 0;
+    max-width: 1170px;
+    margin: auto;
+    background-color: ghostwhite;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: ghostwhite;
+    padding: 70px 0;
+    line-height: 12px;
+    padding-left: 120px;
+    line-height: 1;     
+    font-family: 'Poppins', sans-serif;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4, #payment-section h4{
+   font-size: 13px;
+   color: #504d4d;
+   text-transform: capitalize;
+   margin-bottom: 18px;
+   margin-top: 30px;
+   font-weight: 600;
+   position: relative;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom:13px;
+}
+.footer-col ul li a, p{
+    font-size: 12px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(92, 93, 94);
+}
+.footer-col ul li a:hover{
+    color: rgb(102, 103, 104);
+    padding-left: 3px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    background-color: rgb(18, 124, 124);
+    text-align: center;
+    color: aliceblue;
+    line-height: 30px;
+    margin: 0 10px 10px 0px;
+    border-radius: 50%;
+}
+.footer-col .social-links a:hover{
+    color: rgb(18, 124, 124);
+    background-color: aliceblue;
+}
+
+/* responsive */
+@media(max-width: 768px){
+    .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+   }
+   .footer {
+    padding-left: 80px;
+   }
+   .last{
+       width: 50%;
+   }
+   #smallimage img{
+       height: 50%;
+       width: 25px;
+   }
+}
+@media(max-width: 580px){
+    .footer-col {
+    width: 100%;
+   }
+   .footer {
+    padding-left: 40px;
+   }
+}
+#smallimage{
+    display: flex;
+    
+}
+#smallimage img{
+    height: 29px;
+    width: 40px;
+    margin-right: 10px;
+}
+.last{
+    display: flex;
+}
+p{
+    margin-top: 70px;
+    margin-left: 240px;
+}
+</style>
+</head>
+<body>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partner with PharmEasy</a></li>
+                        <li><a href="#">Sell at PharmEasy</a></li>
+                    </ul>
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Order Medicine</a></li>
+                        <li><a href="#">Healthcare Products</a></li>
+                        <li><a href="#">Lab Tests</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Featured Categories</h4>
+                    <ul>
+                        <li><a href="#">Covid Essentials</a></li>
+                        <li><a href="#">Devices</a></li>
+                        <li><a href="#">Nutrition & Fitness Supplements</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Ayurvedic Care</a></li>
+                        <li><a href="#">Baby & Mom Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Diabetic Care</a></li>
+                        <li><a href="#">Sexual Wellness</a></li>
+                        <li><a href="#">Short Term Ailments</a></li>
+                        <li><a href="#">Lifestyle Ailments</a></li>
+                        <li><a href="#">Home Care</a></li>
+                        <li><a href="#">Women Care</a></li>
+                        <li><a href="#">Health Food and Drinks</a></li>
+                        <li><a href="#">Ortho Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Need Help</h4>                
+                    <ul>
+                        <li><a href="#">Browse All Medicines</a></li>
+                        <li><a href="#">Browse All Molecules</a></li>
+                        <li><a href="#">Browse All Cities & Areas</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    <h4>Policy info</h4>                
+                    <ul>
+                        <li><a href="#">Editorial Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Vulnerability Disclosure Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Customer Support Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+         <div class="last">
+            <div id="payment-section">
+                <h4>Our Payment Partners</h4>
+                <div id="smallimage">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"/>
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+                     <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+                </div>
+               
+            </div>
+            <div>
+                <p>© 2021 PharmEasy. All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

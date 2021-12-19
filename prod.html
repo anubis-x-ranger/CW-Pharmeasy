@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cont {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <select name="" id="priceSort" onchange="handlePriceSort()">
+      <option value="">-----</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+    
+
+    <select name="" id="nameSort" onchange="handleNameSort()">
+      <option value="">-----</option>
+      <option value="asc">Ascending</option>
+      <option value="dsc">Descending</option>
+    </select>
+
+    <button></button>
+    <h1>Prod page</h1>
+    <div id="cont"></div>
+  </body>
+</html>
+
+<script>
+  var products = JSON.parse(localStorage.getItem("shoppingItems"));
+  var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+  console.log(cart.length);
+  document.querySelector("button").textContent = cart.length;
+  displayItem(products);
+
+  function handlePriceSort() {
+    var selected = document.querySelector("#priceSort").value;
+    console.log(selected);
+    if (selected == "high") {
+      products.sort(function (a, b) {
+        return Number(b.price) - Number(a.price);
+      });
+    }
+    if (selected == "low") {
+      products.sort(function (a, b) {
+        return Number(a.price) - Number(b.price);
+      });
+    }
+    //console.log(products);
+    displayItem(products);
+  }
+
+  function handleNameSort() {
+    var selected = document.querySelector("#nameSort").value;
+    console.log(selected);
+
+    if (selected == "asc") {
+      products.sort(function (a, b) {
+        if (a.name > b.name) return 1;
+        if (a.name < b.name) return -1;
+        return 0;
+      });
+    }
+    if (selected == "dsc") {
+      products.sort(function (a, b) {
+        if (a.name > b.name) return -1;
+        if (a.name < b.name) return 1;
+        return 0;
+      });
+    }
+    displayItem(products);
+  }
+
+  function displayItem(products) {
+    document.querySelector("#cont").textContent = "";
+    products.map(function (elem) {
+      var div = document.createElement("div");
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.image);
+
+      var h2 = document.createElement("h2");
+      h2.textContent = elem.name;
+
+      var price = document.createElement("p");
+      price.textContent = elem.price;
+
+      var button = document.createElement("button");
+      button.textContent = "add to cart";
+      button.addEventListener("click", function () {
+        console.log(elem);
+        addToCart(elem);
+      });
+
+      div.append(img, h2, price, button);
+      document.querySelector("#cont").append(div);
+    });
+  }
+
+  function addToCart(elem) {
+    console.log(elem);
+    cart.push(elem);
+    localStorage.setItem("cartItems", JSON.stringify(cart));
+  }
+
+  // add elems to cart array and store cart array into LS
+</script>

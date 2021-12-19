@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="hcc.css">
+
+</head>
+<body>
+    <!-- ----------------HEADER---------------------- -->
+    <div id="containHeader">
+        <div id="logo">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" width="169px" height="50px" onclick="gotoHOME()" >
+        </div>
+        <div id="tabHead">
+          <div id="searchHead">
+            <div id="searboxhead">
+              <select id="sbhead">
+                  <option value="None">Select Pincode</option>
+                  <option value="A F station yelahanka">560063</option>
+                  <option value="Air Force hospital">560007</option>
+                  <option value="Amruthahalli">560092</option>
+                  <option value="Anandnagar">560024</option>
+                  <option value="Ashoknagar">560050</option>
+                  <option value="Austin Town">560047</option>
+                  <option value="Avenue Road">560002</option>
+                  <option value="Bannerghatta">560083</option>
+                  <option value="Bellandur">560103</option>
+              </select>
+              <input type="text" id="sbtexthead" placeholder="Search for Medicines / Healthcare Products@18% Off">
+              <img src="https://t3.ftcdn.net/jpg/01/05/18/78/240_F_105187826_f9QmMttoqksCW1abMmDCAv8q2u265Saa.jpg" alt="" width="10px" height="10px" id="search-img">
+           </div>
+          </div>
+          <div id="searchHead">
+            <nav>
+              <ul class="header-ul">
+                <!-- <li style="margin-left: -35px;" id="OrderMed"><a href="#">Order Medicines</a></li>
+                <li><a href="#">Healthcare Products</a></li>
+                <li><a href="#">Lab Tests</a></li> -->
+                <p id="OrderMed">Order Medicines</p>
+                <p onclick="HP1">Healthcare Products</p>
+                <p>Lab Tests</p>
+                <button type="button" class="keyHead" style="margin-left:400px">
+                  <span class="keyHead__icon">
+                    <ion-icon name="snow-outline"></ion-icon>
+                  </span>
+                  <span class="keyHead__text" ><li>Offers</li></span>
+                </button>
+                <button type="button" class="keyHead">
+                  <span class="keyHead__icon">
+                    <ion-icon name="person"></ion-icon>
+                  </span>
+                  <span class="keyHead__text" id="loginPage"><li>Login / Signup</li></span>
+                </button>
+                
+                <button type="button" class="keyHead">
+                  <!-- <div id="CartNum">
+                    
+                  </div> -->
+                  <span class="keyHead__icon">
+                    
+                    <ion-icon name="cart"></ion-icon>
+                  </span>
+                  <span class="keyHead__text"><li id="cartpage">Cart</li></span>
+                </button>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!-- ----------------------------slider------------ -->
+<div class="w3-container">
+    <!-- <h2>Slideshow Indicators</h2>
+    <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p> -->
+  </div>
+  
+  <div class="w3-content w3-display-container" style="max-width:1000px ;margin-top: 50px; height: 450px;">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/0181c0da556-Calpol-SB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/bd686ae4668-Vicks-CB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/dc8cebaee0a-Cobadex-CB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/6d5c85ccf1a-Tedibar-CB-Dec21.png" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/e5a6336ec7b-Rawpressury-CB-min.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/49b8c1ffedd-Enterogermina_immunity-CB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/f974dcff8c7-2baconil_Sb.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/87ec2590251-Image.jpeg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/c71fcae64ef-sandpuppy.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/96c31a66501-Parachute_Advansed_CB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/f97f8619caf-Boldcare-Men-InsideCB-Nov21.png" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/9d9564c3509-Ruvega-ICB.jpg" style="width:100%">
+    <img class="mySlides" src="https://cms-contents.pharmeasy.in/banner/0c2eab216e2-Luvlap_CB_Oct21.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+  
+    </div>
+  </div>
+
+  <!-- ----------------------------categories----------------------- -->
+    <div id="acontainer">
+       <div>
+          <img src="cat1.png" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture2.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture3.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture4.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture5.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture6.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture7.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture8.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture9.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture10.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture11.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture12.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture13.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture14.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture15.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+       <div>
+        <img src="Capture16.PNG" alt="" height="98%" width="98%" onclick="catprod()">
+       </div>
+    </div>
+    
+
+    <div id="Alloffers">
+        <img src="Alloffers.png" alt="" width="120%">
+      </div>
+  
+      <div id="Reviews">
+        <img src="Reviews.png" alt="" width="120%">
+      </div>
+  
+      <div id="OM1">
+          <img src="OM1.png" alt="" width="120%">
+      </div>
+      <div id="OM2">
+          <img src="OM2.png" alt="" width="120%">
+      </div>
+    <!-- ---------------------Footer----------------------- -->
+    <div class="footer-body">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Partner with PharmEasy</a></li>
+                            <li><a href="#">Sell at PharmEasy</a></li>
+                        </ul>
+                        <h4>Our Services</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">Order Medicine</a></li>
+                            <li><a href="#">Healthcare Products</a></li>
+                            <li><a href="#">Lab Tests</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Featured Categories</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">Covid Essentials</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Nutrition & Fitness Supplements</a></li>
+                            <li><a href="#">Personal Care</a></li>
+                            <li><a href="#">Ayurvedic Care</a></li>
+                            <li><a href="#">Baby & Mom Care</a></li>
+                            <li><a href="#">Skin Care</a></li>
+                            <li><a href="#">Diabetic Care</a></li>
+                            <li><a href="#">Sexual Wellness</a></li>
+                            <li><a href="#">Short Term Ailments</a></li>
+                            <li><a href="#">Lifestyle Ailments</a></li>
+                            <li><a href="#">Home Care</a></li>
+                            <li><a href="#">Women Care</a></li>
+                            <li><a href="#">Health Food and Drinks</a></li>
+                            <li><a href="#">Ortho Care</a></li>
+                            <li><a href="#">Pet Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Need Help</h4>                
+                        <ul class="footer-ul">
+                            <li><a href="#">Browse All Medicines</a></li>
+                            <li><a href="#">Browse All Molecules</a></li>
+                            <li><a href="#">Browse All Cities & Areas</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                        <h4>Policy info</h4>                
+                        <ul class="footer-ul">
+                            <li><a href="#">Editorial Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Vulnerability Disclosure Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Customer Support Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 id="afollow">FOLLOW US</h4>
+                        <div class="social-links">
+                            <a href="#"><p class="fab fa-instagram"></p></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+             <div class="last">
+                <div id="payment-section">
+                    <h4>Our Payment Partners</h4>
+                    <div id="smallimage">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"/>
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+                         <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+                    </div>
+                   
+                </div>
+                <div>
+                    <p>© 2021 PharmEasy. All Rights Reserved</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+ 
+    
+
+    document.querySelector("#loginPage").addEventListener("click", function(){
+    window.location.href = "signup.html"
+})
+document.querySelector("#OrderMed").addEventListener("click", function(){
+    window.location.href = "orderpage.html"
+})
+document.querySelector("#cartpage").addEventListener("click", function(){
+    window.location.href = "PaymentPage.html"
+})
+function gotoHOME(){
+    window.location.href = "index.html"
+}
+function HP1(){
+  window.location.href = "hcc.html"
+}
+function catprod(){
+  window.location.href = "Products.html"
+}
+ </script>
+    

@@ -1,0 +1,367 @@
+#containHeader{
+    display:flex;
+    width:100%;
+    height:120px;
+    background-color:#10847e;
+  }
+  #containHeader > #logo :hover{
+    cursor: pointer;
+  }
+  #logo{
+    height:120px;
+    width:270px;
+    margin-left:20px;
+  }
+  #tabHead{
+    height:100%;
+    width:100%;
+  }
+  #searchHead{
+    /* height:45%; */
+    /* width:1200px; */
+    margin:auto;
+    margin-left: -10px;
+    color: white;
+  }
+
+
+  .header-ul{
+    display:flex;
+  }
+  .header-ul > p {
+    font-size: 18px;
+       color: white;
+       font-weight: 500;
+       font-family: Lato, sans-serif;
+       margin-right: 20px;
+       padding-bottom: -90px;
+       margin-top: -3px;
+  }
+  /* li a{
+    text-decoration:none;
+    color:white;
+  } */
+  /* li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:white;
+    margin:auto;
+    display:block;
+  } */
+  
+  /* li a:hover::after{
+    width:100%;
+    transition: width 0.1s linear;
+  } */
+  .header-ul>  :nth-child(1n):hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+  }
+  .keyHead{
+    color:white;
+    font-size:16px;
+    font-family:Open Sans,sans-serif;
+    margin-top:-4px;
+    margin-left:25px;
+    border:transparent;
+    background-color:transparent;
+  }
+  ion-icon {
+    color: white;
+    font-size: 20px;
+    margin:auto;
+    margin-left: -70px;
+    margin-bottom: 8px;
+  }
+  #searchBox{
+    display:flex;
+    flex-shrink:initial; 
+    width: 50%;
+  }
+  #srchTxt{
+    background-color:white;
+    width: 10%;
+    height: 100%;
+  }
+  #searboxhead {
+width: 830px;
+height: 47px;
+/* border: 1px solid white; */
+border-radius: 8px;
+background-color: white;
+display: flex;
+flex-shrink: initial;
+margin-top: 20px;
+}
+
+#searboxhead > img {
+  width: 7%;
+    height: 99%;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+#sbtexthead{
+  width: 80%;
+  border-radius: 5px;
+  border: 0px;
+  height: 87%;
+  color: #1e1e1f;
+  margin-top: 2.5px;
+  margin-right: -20px;
+}
+#sbhead {
+  width: 21%;
+  border-radius: 8px;
+  height: 100%;
+  border: none;
+  color: teal;
+}
+
+#logo > img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.keyHead__text > li{
+  margin-top: -30px;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+button > :nth-child(1n) :hover {
+ cursor: pointer;
+ border-bottom: 2px solid white;
+}
+#loginPage {
+ margin-left: 60px;
+}
+#CartNum {
+  margin-top: -36px;
+  margin-right: 50px;
+  background-color: rgb(236, 105, 175);
+  color: black;
+  border: 0;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+/* -------------------Upto HEADER------------------- */
+
+/* ------------------category-------------------- */
+#acontainer{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(6,80px);
+    grid-gap: 15px 15px;
+    position: relative;
+    margin-left: 260px;
+    margin-top: 30px;
+    
+}
+#acontainer>div{
+    border: 1px solid rgb(202, 201, 201);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 250px;
+}
+#acontainer>div:hover{
+    box-shadow: teal 0px 1px 2px, rgb(2, 173, 173) 0px 0px 1px 2px;
+    
+}
+@media(max-width: 800px){
+    #acontainer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(16,80px);
+    grid-gap: 12px 12px;
+    position: relative;
+    margin-left: 10px;
+    
+    
+   }
+   img{
+       height: 60px;
+       width: auto;
+   }
+}
+@media(max-width: 370px){
+    #acontainer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(16,70px);
+    grid-gap: 10px 10px;
+    position: relative;
+    margin-left: 10px;
+    
+    
+   }
+   img{
+       height: 60px;
+       width: auto;
+   }
+}
+#Alloffers{
+     
+    width: 70%;
+    margin-left: 7%;
+    margin-bottom: 20px;
+}
+#Reviews {
+   width: 70%;
+   margin-left: 7%;
+   margin-bottom: 20px;
+}
+#OM1 {
+   width: 70%;
+   margin-left: 7%;
+   margin-bottom: 20px;
+}
+#OM2 {
+   width: 70%;
+   margin-left: 7%;
+   margin-bottom: 20px;
+}
+
+
+/* ------------------------FOOTER-------------------------------- */
+
+.footer-body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+}
+        
+.container{
+    max-width: 1170px;
+    line-height: 1.5;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box
+}
+.row{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-wrap: wrap;
+    flex-shrink: initial;
+}
+.footer-ul{
+    list-style: none;
+}
+.footer{
+    font-family: 'Poppins', sans-serif;
+    padding: 70px 0;
+    line-height: 12px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    line-height: 1.5;
+    
+}
+.footer-col{
+   width: 100%;
+   
+  
+}
+.footer-col h4, #payment-section h4{
+   font-size: 15px;
+   color: #504d4d;
+   text-transform: capitalize;
+   margin-bottom: 0px;
+   margin-top: 30px;
+   font-weight: 700;
+   position: relative;
+   
+   
+}
+.footer-col h4{
+    margin-left: 13%;
+}
+#afollow{
+    margin-left: 0%;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom:13px;
+}
+.footer-col ul li a, p{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(92, 93, 94);
+}
+.footer-col ul li a:hover{
+    color: rgb(102, 103, 104);
+    padding-left: 3px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    background-color: rgb(18, 124, 124);
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    margin: 0 10px 10px 0px;
+    border-radius: 50%;
+}
+.footer-col .social-links a:hover{
+    color: rgb(18, 124, 124);
+    background-color: #f4f7fb;
+}
+
+/* responsive */
+@media(max-width: 800px){
+    .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+   }
+   /* .footer {
+    padding-left: 60px;
+   } */
+   .last{
+       width: 50%;
+   }
+   #smallimage img{
+       height: 50%;
+       width: 25px;
+   }
+   .row{
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    
+   }
+   .footer-col h4{
+    margin-left: 4%;
+  }
+}
+@media(max-width: 580px){
+    .footer-col {
+    width: 100%;
+   }
+   .footer {
+    padding-left: 40px;
+   }
+}
+#smallimage{
+    display: flex;
+    
+}
+#smallimage img{
+    height: 29px;
+    width: 40px;
+    margin-right: 10px;
+}
+.last{
+    display: flex;
+}
+#footer-p{
+    margin-top: 70px;
+    margin-left: 240px;
+}

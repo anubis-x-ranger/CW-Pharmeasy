@@ -1,0 +1,130 @@
+#containHeader{
+    display:flex;
+    width:100%;
+    height:120px;
+    background-color:#10847e;
+  }
+  
+  #logo{
+    height:120px;
+    width:270px;
+    margin-left:20px;
+  }
+  #tabHead{
+    height:100%;
+    width:100%;
+  }
+  #searchHead{
+    /* height:45%; */
+    /* width:1200px; */
+    margin:auto;
+    margin-left: -10px;
+  }
+
+
+  ul{
+    display:flex;
+  }
+  li {
+    font-size:18px;
+    font-family:Open Sans,sans-serif;
+    margin-top:4px;
+    margin-left:25px;
+    list-style:none;
+    font-weight: 300;
+  }
+  li a{
+    text-decoration:none;
+    color:white;
+  }
+  li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:white;
+    margin:auto;
+    display:block;
+  }
+  
+  li a:hover::after{
+    width:100%;
+    transition: width 0.1s linear;
+  }
+  
+  .keyHead{
+    color:white;
+    font-size:16px;
+    font-family:Open Sans,sans-serif;
+    margin-top:-4px;
+    margin-left:25px;
+    border:transparent;
+    background-color:transparent;
+  }
+  ion-icon {
+    color: white;
+    font-size: 20px;
+    margin:auto;
+    margin-left: -70px;
+    margin-bottom: 8px;
+  }
+  #searchBox{
+    display:flex;
+    flex-shrink:initial; 
+    width: 50%;
+  }
+  #srchTxt{
+    background-color:white;
+    width: 10%;
+    height: 100%;
+  }
+  #searboxhead {
+width: 830px;
+height: 47px;
+/* border: 1px solid white; */
+border-radius: 8px;
+background-color: white;
+display: flex;
+flex-shrink: initial;
+margin-top: 20px;
+}
+
+#searboxhead > img {
+  width: 7%;
+    height: 99%;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+#sbtexthead{
+  width: 80%;
+  border-radius: 5px;
+  border: 0px;
+  height: 87%;
+  color: #c1c9ce;
+  margin-top: 2.5px;
+  margin-right: -20px;
+}
+#sbhead {
+  width: 21%;
+  border-radius: 8px;
+  height: 100%;
+  border: none;
+  color: teal;
+}
+
+#logo > img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.keyHead__text > li{
+  margin-top: -30px;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+button > :nth-child(1n) :hover {
+ cursor: pointer;
+ border-bottom: 2px solid white;
+}
+#loginPage {
+ margin-left: 60px;
+}
