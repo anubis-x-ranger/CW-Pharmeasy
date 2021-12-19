@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+      .flex{
+        display:flex;
+      }
+      .TCatHead{
+        height:30px;
+        width:85%;
+        margin:auto;
+        font-family:Open Sans,sans-serif;
+        font-size:25px;
+        margin-left:100px;
+        padding:30px;
+      }
+      #TCatCon{
+        display:grid;
+        height:500px;
+        width:85%;
+        margin:auto;
+        margin-top:5px;
+        grid-gap:2%;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      #TCatG{
+        height:400px;
+        width:300px;
+        margin:auto;
+        display:grid;
+        grid-gap:3%;
+        grid-template-rows: 50px 120px 120px;
+        grid-template-columns: 120px 120px;
+        border-radius:15px;
+      }
+    </style>
+</head>
+<body>
+  <div>
+    <div class="TCatHead flex">
+      <div>
+        <p>Top Categories</p>
+      </div>
+      <div>
+        <p style="color:#10847e; font-size:18px; margin-left:950px">View All >></p>
+      </div>
+      
+    </div>
+    <div id="TCatCon">
+      <div id="TCatG">
+        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/05345cd0e54-Devices.jpg">
+        
+      </div>
+      <div id="TCatG">
+        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/eb45762cff0-Nutrition-drinks-min.jpg">
+             
+      </div>
+      <div id="TCatG">
+        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/12223230e1a-Ayurvedic-care.jpg">
+             
+      </div>
+      <div id="TCatG">
+        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/2ddc1748b99-Baby-Mom-care.jpg">
+             
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
+
+
