@@ -1,5 +1,36 @@
 # CW-Pharmeasy
-We tried our level best to try to clone the entire PharmEasy wesite. <br>
-technologies Used : HTML, CSS, JS.    <br>
-You can run it using live sever on VS Code or deploy it on vercel or netlify.
-Refered Websites : W3schools, Mdn, Flaticon, googlefonts etc....
+
+
+<a href = "https://pharmeasy.in/"><img src ="https://github.com/anubis-x-ranger/CW-Pharmeasy/blob/main/pharmeasy.PNG"> </a>
+
+
+<h3>What is Pharmeasy ?</h3>
+
+<p>PharmEasy is an Indian healthcare app and ecommerce platform for consumers involved in selling online medicines, diagnostics, telehealth, online doctor consultation services.</p>
+
+
+
+<h3>Description</h3>
+
+<p>Built for construct week in unit2 at Masai School to showCase what we learnt till now. Implemented using Frontend. Only made for educational purpose.</p>
+
+<h3>TechStacks</h3>
+
+<p> HTML | CSS | JAVASCRIPT</p>
+
+
+
+<h3>Build Process</h3>
+
+<p> You can visit the website we buit here "hopeful-cray-1a0e19.netlify.app/" </p>
+
+<ul>
+  <li>Clone or download the repo</li>
+  <li>open index.html with live-server</li>  
+  </ul>
+
+<h3>Contributers</h3>
+<a href = "https://github.com/anubis-x-ranger"><img src = "https://avatars.githubusercontent.com/u/44902527?v=4"  width=100px/></a>
+
+
+
