@@ -1,4 +1,4 @@
-# CW-Pharmeasy
+# Pharmeasy-clone
 
 
 <a href = "https://pharmeasy.in/"><img src ="https://github.com/anubis-x-ranger/CW-Pharmeasy/blob/main/pharmeasy.PNG"> </a>
@@ -31,6 +31,9 @@
 
 <h3>Contributers</h3>
 <a href = "https://github.com/anubis-x-ranger"><img src = "https://avatars.githubusercontent.com/u/44902527?v=4"  width=100px/></a>
+<a href = "https://github.com/ashiq352"><img src = "https://avatars.githubusercontent.com/u/95991343?v=4"  width=100px/></a>
+<a href = "https://github.com/Naveen-Peddabuddi"><img src = "https://avatars.githubusercontent.com/u/95956273?v=4"  width=100px/></a>
+<a href = "https://github.com/sagarkyatham"><img src = "https://avatars.githubusercontent.com/u/95856560?v=4"  width=100px/></a>
 
 
 
