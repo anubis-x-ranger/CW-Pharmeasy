@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Pg</title>
+    <style>
+        #headcontainer {
+           display: grid; 
+           grid-template-columns: repeat(2,1fr);
+           grid-template-areas: 
+            "f prod  "
+            ". prod  ";
+           margin-left: 20px;
+        }
+        #Offer {
+            width: 700px;
+            height:800px;
+            margin-left: 80px;
+            margin-top: 20px;
+            height: 500px;
+            grid-area :f;
+        }
+        #container {
+            margin: auto;
+            /* width: 55%; */
+            margin-left: 70px;
+            margin-top: 0px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap : 15px;
+            grid-area: prod;
+            height: 1000px;
+        }
+        #container > div {
+            border: 1px solid #dfe3e6;
+            padding-left: 20px;
+            font-family: Lato,sans-serif;
+            font-size: 16px;
+            color: #4f5856;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            padding-right: 18px;
+            height: 400px;
+        }
+        #container > :nth-child(1n):hover{
+            border: 1px solid teal;
+            cursor: pointer;
+        }
+
+
+      #btn {
+        margin-left: 70%;
+        margin-bottom: 20px;
+        border: 0px;
+        width: 35%;
+        height: 10%;
+        background-color: teal;
+        color: #dfe3e6;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      #containHeader{
+        display:flex;
+        width:100%;
+        height:120px;
+        background-color:#10847e;
+      }
+      #logo{
+        height:120px;
+        width:270px;
+        margin-left:20px;
+      }
+      #tabHead{
+        height:100%;
+        width:100%;
+      }
+      #searchHead{
+        /* height:45%; */
+        /* width:1200px; */
+        margin:auto;
+        margin-left: -10px;
+      }
+      ul{
+        display:flex;
+      }
+      li {
+        font-size:18px;
+        font-family:Open Sans,sans-serif;
+        margin-top:4px;
+        margin-left:25px;
+        list-style:none;
+        font-weight: 300;
+      }
+      li a{
+        text-decoration:none;
+        color:white;
+      }
+      li a::after{
+        content:'';
+        width:0;
+        height:3px;
+        background-color:white;
+        margin:auto;
+        display:block;
+      }
+      li a:hover::after{
+        width:100%;
+        transition: width 0.1s linear;
+      }
+      .keyHead{
+        color:white;
+        font-size:16px;
+        font-family:Open Sans,sans-serif;
+        margin-top:-4px;
+        margin-left:25px;
+        border:transparent;
+        background-color:transparent;
+      }
+      .PaySecureTxt{
+        margin-top:25px;
+        margin-left:800px;
+        font-size:18px;
+        color:white;
+        font-family:Open Sans,sans-serif;
+        font-style: italic;
+      }
+      #logo > img {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .rad {
+        display: flex;
+        /* justify-content: space-around; */
+      }
+      #Offer1-1{
+        width: 100%;
+        padding-left: 20px;
+        font-family: Lato,sans-serif;
+        color: #2c2c2c;
+        font-size: 16px;
+        line-height: 40px;
+        font-weight: 330;
+      }
+      #Offer1-1 > h2 {
+        font-size: 18px;
+      }
+      #filtername {
+        padding-left: 20px;
+      }
+      .OfferArr > ion-icon{
+        color:black;
+        margin-left: 200px;
+      }
+      .radio{
+        margin-right:10px;
+      }
+      .iconImg > img{
+        height:40px;
+      }
+      .boxChkOut{
+        height:1500px;
+        width:600px;
+        margin-left:50px;
+        margin-top:50px;  
+      }
+      .payChkOut{
+        height:30%;
+        width:85%;
+        margin-left:50px;
+      }
+      .addChkOut{
+        height:60%;
+        width:85%;
+        margin-top:30px;
+        margin-left:40px;
+      }
+      .PharmWallet{
+        display:flex;
+        height:90px;
+        width:80%;
+        margin:auto;
+        background-color:#f2fff8;
+        border-radius:15px;
+      }
+      .imgWall{
+        height:50%;
+        width:15%;
+        margin-top:25px;
+        margin-left:25px;
+      }
+      .fromWallet{
+        margin-top:15px;
+      }
+      .txtTagPW{
+        font-weight:bold;
+        font-family: Open Sans,sans-serif;
+        margin-left:35px;
+        line-height:15px;
+      }
+      .TCApp{
+        color:#322f94;
+        font-family: Open Sans,sans-serif;
+        margin-left:35px;
+        text-decoration: underline;
+      }
+      .chkbx{
+        width:20px;
+        height:20px;
+        margin-left:80px;
+      }
+      .CartChkOut{
+        font-family: Open Sans,sans-serif;
+        margin-top:10px;
+        padding:10px;
+      }
+      .CartChkOut > p{
+        font-size:18px;
+      }
+      .CartChkOut > h3{
+        font-size:20px;
+        color:#8c9fad;
+      }
+      .CartChkOut > h4{
+        font-size:18px;
+      }
+      .savedTag{
+        display:flex;
+        height:50px;
+        width:80%;
+        margin:auto;
+        background-color:#f2fff8;
+        border-radius:15px;
+        border: 2px dashed teal;
+        padding:20px;
+      }
+      .savedTag>p{
+        font-family: Open Sans,sans-serif;
+        font-size:18px;
+        color:teal;
+        margin-left:25px;
+      }
+      .addChkOut{
+        font-family: Open Sans,sans-serif;
+        padding:20px;
+      }
+      #inputAddDet{
+        height:35px;
+        width:350px;
+        border-radius:10px;
+        margin-left:25px;
+        font-family: Open Sans,sans-serif;
+        color:#10847e;
+        font-size:20px;
+      }
+      #AddDetSave{
+        color:#959595;
+        font-size:15px;
+      }
+      #AddDetSave>label{
+        margin-left:25px;
+        font-weight:bold;
+      }
+      #AddDetSave>p{
+        margin-left:25px;
+      }
+      #AddTyp{
+        margin-left:30px;
+      }
+      #SaveAdd{
+        height:40px;
+        width:250px;
+        border-radius:10px;
+        margin-left:20%;
+        background-color: teal;
+        font-size:18px;
+        font-family: Open Sans,sans-serif;
+        color:white;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="containHeader">
+        <div id="logo">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" width="169px" height="50px">
+       </div>
+      <div class="PaySecureTxt">
+        <h3>100% Secure Payment</h3>
+      </div>
+      </div>
+      
+
+      <!-- Offers -->
+    <div id="headcontainer">
+        <div id="Offer">
+           <div id="Offer1-1">
+              <h1>Offers</h1>
+              <form id="rad">
+                <img src="https://cms-contents.pharmeasy.in/offer/8cdf65ac110-mobiwiklogo.png" alt="offer img" style="height:30px">
+                  <label style="font-weight:bold; font-size:18px; margin-left:25px;">Mobiwik</label>
+                  <input type="radio" style="margin-left:528px"> <br>
+                <p style="line-height:25px">Get cashback upto Rs.500 on a minimum transaction of Rs.500 via mobikwik. Use code MBK500 on Mobikwik</p>
+                <hr>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png" alt="offer img" style="height:18px">
+                  <label style="font-weight:bold; font-size:18px; margin-left:25px;">Paytm</label>
+                  <input type="radio" style="margin-left:525px"> <br>
+                <p>Get exciting offers and cashbacks on transaction via Paytm.</p>
+                <hr>
+                <img src="https://cdn.worldvectorlogo.com/logos/phonepe-1.svg" alt="offer img" style="height:20px">
+                  <label style="font-weight:bold; font-size:18px; margin-left:25px;">PhonePe</label>
+                  <input type="radio" style="margin-left:480px"> <br>
+                <p style="line-height:25px">Get scratch card and save upto Rs.750 cashback on a minimum transaction of Rs.500 via PhonePe wallet only.</p>
+                <hr>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/amazonpay.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                  <label style="font-weight:bold; font-size:18px; margin-left:25px;">Amazon Pay</label>
+                  <input type="radio" style="margin-left:460px"> <br>
+                <p>Get cashback upto Rs.500 on a minimum transaction of Rs.100 via Amazon Pay.</p>
+                <hr>
+              </form> 
+             <br>
+           <!-- Other Options-->
+       
+              <h1>Other Options</h1>
+              <form id="rad">
+                <img src="https://www.pngfind.com/pngs/m/100-1003354_download-bhim-apk-hd-png-download.png" alt="offer img" style="height:30px">
+                  <label style="font-weight:bold; font-size:20px">UPI</label>
+                   <button type="button" class="keyHead">
+              <span class="OfferArr__icon">
+                 <ion-icon name="chevron-forward-outline" style="color: black; margin-left: 564px"></ion-icon>
+                </span>
+                </button>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/gpay.png" alt="support-icon" style="height:50px; margin-left:40px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/bhim.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <hr>
+                <img src="https://cdn.pharmeasy.in/payments/wallet.png" alt="offer img" style="height:35px">
+                  <label style="font-weight:bold; font-size:18px">Wallet</label>
+                  <button type="button" class="keyHead">
+              <span class="OfferArr__icon">
+                 <ion-icon name="chevron-forward-outline" style="color: black; margin-left: 530px"></ion-icon>
+                </span>
+                </button>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/amazonpay.png" alt="support-icon" style="height:50px; margin-left:40px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytm.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/freecharge-wallet.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <hr>
+                <img src="https://cdn.pharmeasy.in/payments/card.png" alt="offer img" style="height:40px">
+                  <label style="font-weight:bold; font-size:18px">Credit/Debit Card</label>
+                  <button type="button" class="keyHead">
+              <span class="OfferArr__icon">
+                 <ion-icon name="chevron-forward-outline" style="color: black; margin-left: 430px"></ion-icon>
+                </span>
+                </button>
+                <p style="margin-left:50px; line-height:25px">Get 10% cashback upto Rs.500 on minimum transaction of Rs.1500 on ICICI Debit & Credit card.</p>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png" alt="support-icon" style="height:50px; margin-left:40px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png" alt="support-icon" style="height:50px; margin-left:10px;">
+                <hr>
+                <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="offer img" style="height:45px">
+                  <label style="font-weight:bold; font-size:18px">Net Banking</label>
+                  <button type="button" class="keyHead">
+              <span class="OfferArr__icon">
+                 <ion-icon name="chevron-forward-outline" style="color: black; margin-left: 465px"></ion-icon>
+                </span>
+                </button>
+                <p style="margin-left:50px">We support over 100 banks.</p>
+                <hr>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="offer img" style="height:40px">
+                <label style="font-weight:bold; font-size:18px;">Cash on Delivery</label>
+                  <input type="radio" style="margin-left:460px">
+                <p style="margin-left:50px">Pay via cash/UPI at the time of delivery</p>
+                
+                <hr>
+              </form> 
+             <br>
+           </div>
+          </div>
+      <div class="boxChkOut">
+        <!-- CheckOut -->
+        <div class="payChkOut">
+          <div class="PharmWallet">
+            <div class="imgWall">
+              <img alt="wallet" src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg" loading="lazy" importance="low">
+            </div>
+            <div class="fromWallet">
+              <form>
+              <label class="txtTagPW">PharmEasy Wallet</label>
+                <input class="chkbx" type="checkbox"></input>
+              <p class="TCApp">T&CApply</p>
+              </form>
+            </div>
+          </div>
+        <div class="CartChkOut">
+          <h2>Cart</h2>
+          <h3>Price Breakdown</h3>
+          <p>Cart Value : <span id="cartvalue"> </span></p>
+          <p>Delivery Charge ..................................................</p>
+          <hr>
+          <h4>Total Amount :</h4>
+        </div>
+        <div class="savedTag">
+          <img alt="wallet" src="https://media.istockphoto.com/vectors/rupee-icon-vector-illustration-background-vector-id1206483802?k=20&m=1206483802&s=612x612&w=0&h=1rZyDnTkjI-sYz3FupKmZWpwFOyt4nvt4Cj7L7e6zPg=" loading="lazy" importance="low" style="height:28px; margin-top:10px;">
+          <p>Total Savings on this Order....</p>
+        </div>
+        </div>
+        <!-- Address -->
+        <div class="addChkOut">
+          <h2>Add Address</h2>
+          <form id="AddDetSave">
+  <label>Bill To *</label><br><br>
+  <input id="inputAddDet" type="text"/>
+            <p>The bill will be prepared against this name.</p>
+            <br>
+  <label>Mobile No. *</label><br><br>
+  <input id="inputAddDet" type="text"/>
+            <p>For all delivery related communication.</p>
+            <br>
+             <label>Building Name/ Flat No. *</label><br><br>
+  <input id="inputAddDet" type="text"/>
+            <br><br>
+  <label>Street Name *</label><br><br>
+  <input id="inputAddDet" type="text"/>
+            <br><br>
+             <label>Pincode *</label><br><br>
+  <input id="inputAddDet" type="text"/>
+            <br><br>
+            <label>Address Type *</label><br><br>
+            <input id="AddTyp" type="radio" style="margin-left:70px">
+            <label>Home</lable>
+            <input id="AddTyp" type="radio">
+            <label>Work</lable>
+            <input id="AddTyp" type="radio">
+            <label>Others</lable><br><br><br><br>
+            <input id="SaveAdd" type="submit" value="SAVE"/>
+          </form><br>
+          
+     </div>
+      </div>
+      
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      
+
+</body>
+</html>
+
+<script>
+  // var cv = JSON.parse(localStorage.getItem("cart"));
+  // var total = 0;
+  // for (i =0; i < cv.length;i++){
+     
+  //  if ( i = 0) {
+  //    total = cv[i].p;
+
+  //  }
+  //  else {
+  //    total = total + cv[i].p;
+  //  } 
+   
+  // }
+
+  // document.querySelector("#cartvalue").append(total);
+</script>

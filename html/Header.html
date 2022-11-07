@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+      #containHeader{
+        display:flex;
+        width:100%;
+        height:120px;
+        background-color:#10847e;
+      }
+      img{
+        margin-top:30px;
+        height:65px;
+        width:200px;
+      }
+      #logo{
+        height:120px;
+        width:270px;
+        margin-left:20px;
+      }
+      #tabHead{
+        height:100%;
+        width:100%;
+      }
+      #searchHead{
+        height:45%;
+        width:1200px;
+        margin:auto;
+      }
+      ul{
+        display:flex;
+      }
+      li {
+        font-size:20px;
+        font-family:Open Sans,sans-serif;
+        margin-top:10px;
+        margin-left:25px;
+        list-style:none;
+      }
+      li a{
+        text-decoration:none;
+        color:white;
+      }
+      li a::after{
+        content:'';
+        width:0;
+        height:3px;
+        background-color:white;
+        margin:auto;
+        display:block;
+      }
+      
+      li a:hover::after{
+        width:100%;
+        transition: width 0.1s linear;
+      }
+      button{
+        margin:auto;
+      }
+      .keyHead{
+        color:white;
+        font-size:15px;
+        font-family:Open Sans,sans-serif;
+        margin-top:5px;
+        margin-left:25px;
+        border:transparent;
+        background-color:transparent;
+      }
+      ion-icon {
+        color: white;
+        font-size: 22px;
+        margin:auto;
+      }
+     
+      
+    </style>
+</head>
+<body>
+  <div id="containHeader">
+    <div id="logo">
+      <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+    </div>
+    <div id="tabHead">
+      <div id="searchHead"></div>
+      <div id="searchHead">
+        <nav>
+          <ul>
+            <li><a href="#">Order Medicines</a></li>
+            <li><a href="#">Healthcare Products</a></li>
+            <li><a href="#">Lab Tests</a></li>
+            <button type="button" class="keyHead" style="margin-left:300px">
+              <span class="keyHead__icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </span>
+              <span class="keyHead__text">Offers</span>
+            </button>
+            <button type="button" class="keyHead">
+              <span class="keyHead__icon">
+                <ion-icon name="person"></ion-icon>
+              </span>
+              <span class="keyHead__text">Login / Signup</span>
+            </button>
+            <button type="button" class="keyHead">
+              <span class="keyHead__icon">
+                <ion-icon name="cart"></ion-icon>
+              </span>
+              <span class="keyHead__text">Cart</span>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
